@@ -1,0 +1,19 @@
+{
+  "name": "@engaze/ui-root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ]
+  },
+  "scripts": {
+    "start:ui": "lerna exec --scope @engaze/ui -- yarn start",
+    "start:admin-ui": "lerna exec --scope @engaze/admin-ui -- yarn start",
+    "build:ui": "lerna exec --scope @engaze/ui -- yarn build",
+    "build:admin-ui": "lerna exec --scope @engaze/admin-ui -- yarn build",
+    "bootstrap": "lerna bootstrap"
+  }
+}
